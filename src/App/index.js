@@ -2,14 +2,16 @@
 import './App.css';
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
+import { Home } from '../Home';
 
-import { Home } from '../Home/header';
 function App() {
-  //const isLogin = React.useState(false);
+
   return (
     <React.Fragment>
       <RenHome>
-        <Home />
+        <Home 
+        />
+        
       </RenHome>
     </React.Fragment>
   );

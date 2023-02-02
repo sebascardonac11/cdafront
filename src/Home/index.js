@@ -1,5 +1,9 @@
 import React from "react";
-import { Button } from 'react-bootstrap';
+import { Signup } from "../Auth/Signup";
+import { Login } from "../Auth/Login";
+import { Account } from "../Auth/Account";
+import { WhatsApp } from "../WhatsApp";
+import { Button } from "react-bootstrap";
 function Home() {
     return (
         <React.Fragment>
@@ -13,14 +17,22 @@ function Home() {
                         <li className="nav-item"><a href="https://gi.com" className="nav-link link-dark px-2">About</a></li>
                     </ul>
                     <ul className="nav">
-                        <li className="nav-item"><a href="https://gi.com" className="nav-link link-dark px-2">Login</a></li>
-                        <li className="nav-item"><a href="https://gi.com" className="nav-link link-dark px-2">Sign up</a></li>
+                        <li className="nav-item">
+                        <Button type="button" variant="primary">Log in</Button>
+                            </li>
+                        <li className="nav-item">
+                        <Button type="button" variant="primary">Sign up</Button>
+                   
+                            </li>
                     </ul>
                 </div>
             </nav>
             <header className='App-header'>
-                <h1>Fist react</h1>
-                <Button variant="primary">Acceder</Button>
+                <Account>
+                    <Signup />
+                    <Login />
+                    <WhatsApp />
+                </Account>
             </header>
         </React.Fragment>
     );
